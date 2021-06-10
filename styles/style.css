@@ -1,0 +1,29 @@
+a {
+    text-decoration: none;
+  }
+
+li {
+    list-style: none;
+}
+
+.container {
+    width: 1328px;
+    margin: 0 auto;
+}
+
+.container-flex {
+    display: flex;
+}
+
+.container-flex {
+    justify-content: space-between;
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul.bottom-header li {
+    display: block;
+}
