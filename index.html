@@ -2,72 +2,238 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oniks</title>
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oniks</title>
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <!-- Swiper styles -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
 
-    <header class="container">
-        <div class="top-header">
-            <div>
-                <a href="tel:0800750755">0 800 750 755</a>
-            </div>
-            <div>2</div>
-            <div><ul>
-                <li>Search</li>
-                <li>RU</li>
-                <li>UA</li>
-                <li>Basket</li>
-            </ul></div>
-        </div>
-        <ul class="bottom-header container-flex">
-            <li>Кольца</li>
-            <li>Серьги</li>
-            <li>Кулоны</li>
-            <li>Крестики</li>
-            <li>Браслеты</li>
-            <li>Цепочные колье</li>
-            <li>Детям</li>
-            <li>Мужчинам</li>
-            <li>Аксесуары</li>
-            <li>Подарки</li>
-            <li>Коллекции</li>
+  <header class="container">
+    <div class="top-header">
+      <div class="top-header-left">
+        <a href="tel:0800750755">0 800 750 755</a>
+      </div>
+      <div class="top-header-middle">
+        <img src="img/logo.svg" alt="logo">
+      </div>
+      <div class="top-header-right">
+        <ul class="container-flex">
+          <li>Search</li>
+          <li>RU</li>
+          <li>UA</li>
+          <li>Basket</li>
         </ul>
-    </header>
+      </div>
+    </div>
+    <ul class="bottom-header container-flex">
+      <li>Кольца</li>
+      <li>Серьги</li>
+      <li>Кулоны</li>
+      <li>Крестики</li>
+      <li>Браслеты</li>
+      <li>Цепочные колье</li>
+      <li>Детям</li>
+      <li>Мужчинам</li>
+      <li>Аксесуары</li>
+      <li>Подарки</li>
+      <li>Коллекции</li>
+    </ul>
+  </header>
 
-    <section>
-        <div class="container">
-            <div>
-                <img src="img/main-image.png" alt="main-image">
-            </div>
-            <div class="container-flex">
-                <img src="img/main-image-bottom-1.png" alt="main-image-bottom-1">
-                <img src="img/main-image-bottom-2.png" alt="main-image-bottom-2">
-                <img src="img/main-image-bottom-3.png" alt="main-image-bottom-3">
-                <img src="img/main-image-bottom-4.png" alt="main-image-bottom-4">
-                <img src="img/main-image-bottom-5.png" alt="main-image-bottom-5">
-            </div>
+  <section class="main-section">
+    <div class="container">
+      <div class="main-section-image">
+        <img src="img/main-image.png" alt="main-image">
+        <div class="main-section-text">
+          <p class="main-section-text-top">Тебе можно все!</p>
+          <p class="main-section-text-middle">до -55%</p>
+          <p class="main-section-text-bottom">на ювелирные капризы</p>
+          <button>Подробнее</button>
         </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="footer_section">
-            <div class="footer_section-block">1</div>
-            <div class="footer_section-block">2</div>
-            <div class="footer_section-block">3</div>
-            <div class="footer_section-block">4</div>
-            <div class="footer_section-block">5</div>
+      </div>
+      <div class="main-images container-flex">
+        <div>
+          <img src="img/main-image-bottom-1.png" alt="main-image-bottom-1">
+          <div class="overlay">Серьги</div>
         </div>
-    </footer>
+        <div>
+          <img src="img/main-image-bottom-2.png" alt="main-image-bottom-2">
+          <div class="overlay">Кольца</div>
+        </div>
+        <div>
+          <img src="img/main-image-bottom-3.png" alt="main-image-bottom-3">
+          <div class="overlay">Колье</div>
+        </div>
+        <div>
+          <img src="img/main-image-bottom-4.png" alt="main-image-bottom-4">
+          <div class="overlay">Браслеты</div>
+        </div>
+        <div>
+          <img src="img/main-image-bottom-5.png" alt="main-image-bottom-5">
+          <div class="overlay">Подвески</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- SCRIPTS -->
-    <script></script>
+  <section class="container">
+
+    <div class="swiper-container">
+
+      <div class="swiper-container-head">
+
+        <div class="swiper-container-head-left">
+          <h3>Рекомендуемые</h3>
+          <a href="#">Посмотреть все</a>
+        </div>
+
+      </div>
+
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="flex-card">
+            <div class="top-image">
+              <img src="img/img-recomendation-1.png" alt="img-recomendation-1">
+            </div>
+            <div class="info-card">
+              <div class="info-card-description-first">Серьги в желтом золоте "Грация"</div>
+              <div class="info-card-description-second">1335 грн</div>
+              <div class="info-card-description-third">12 790 грн</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="flex-card">
+            <div class="top-image">
+              <img src="img/img-recomendation-2.png" alt="img-recomendation-2">
+            </div>
+            <div class="info-card">
+              <div class="info-card-description-first">Серьги в желтом золоте "Грация"</div>
+              <div class="info-card-description-second">1335 грн</div>
+              <div class="info-card-description-third">12 790 грн</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="flex-card">
+            <div class="top-image">
+              <img src="img/img-recomendation-3.png" alt="img-recomendation-3">
+            </div>
+            <div class="info-card">
+              <div class="info-card-description-first">Серьги в желтом золоте "Грация"</div>
+              <div class="info-card-description-second">1335 грн</div>
+              <div class="info-card-description-third">12 790 грн</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="flex-card">
+            <div class="top-image">
+              <img src="img/img-recomendation-4.png" alt="img-recomendation-4">
+            </div>
+            <div class="info-card">
+              <div class="info-card-description-first">Серьги в желтом золоте "Грация"</div>
+              <div class="info-card-description-second">1335 грн</div>
+              <div class="info-card-description-third">12 790 грн</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="flex-card">
+            <div class="top-image">
+              <img src="img/img-recomendation-1.png" alt="img-recomendation-5">
+            </div>
+            <div class="info-card">
+              <div class="info-card-description-first">Серьги в желтом золоте "Грация"</div>
+              <div class="info-card-description-second">1335 грн</div>
+              <div class="info-card-description-third">12 790 грн</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="flex-card">
+            <div class="top-image">
+              <img src="img/img-recomendation-2.png" alt="img-recomendation-6">
+            </div>
+            <div class="info-card">
+              <div class="info-card-description-first">Серьги в желтом золоте "Грация"</div>
+              <div class="info-card-description-second">1335 грн</div>
+              <div class="info-card-description-third">12 790 грн</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="flex-card">
+            <div class="top-image">
+              <img src="img/img-recomendation-3.png" alt="img-recomendation-7">
+            </div>
+            <div class="info-card">
+              <div class="info-card-description-first">Серьги в желтом золоте "Грация"</div>
+              <div class="info-card-description-second">1335 грн</div>
+              <div class="info-card-description-third">12 790 грн</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="flex-card">
+            <div class="top-image">
+              <img src="img/img-recomendation-4.png" alt="img-recomendation-8">
+            </div>
+            <div class="info-card">
+              <div class="info-card-description-first">Серьги в желтом золоте "Грация"</div>
+              <div class="info-card-description-second">1335 грн</div>
+              <div class="info-card-description-third">12 790 грн</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+        <div class="swiper-container-right">
+          <div class="swiper-container-arrows">
+            <div class="button-prev"><i class="arrow left"></i></div>
+            <div class="button-next"><i class="arrow right"></i></div>
+          </div>
+        </div>
+
+    </div>
+
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer_section">
+      <div class="footer_section-block">Footer 1</div>
+      <div class="footer_section-block">Footer 2</div>
+      <div class="footer_section-block">Footer 3</div>
+      <div class="footer_section-block">Footer 4</div>
+      <div class="footer_section-block">Footer 5</div>
+    </div>
+  </footer>
+
+  <!-- Swiper js script -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- SCRIPTS -->
+  <script src="scripts/develop.js"></script>
+
 
 </body>
 
