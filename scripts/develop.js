@@ -1,16 +1,13 @@
 var swiper = new Swiper('.swiper-container', {
 	slidesPerView: 4,
 	spaceBetween: 10,
-	loop: true,
-	// init: false,
-	pagination: {
-		el: '.swiper-pagination',
-		clickable: true,
-	},
-	navigation: {
-		prevEl: '.button-prev',
-		nextEl: '.button-next',
-	},
+	loop: false,
+	keyboard: {
+		enabled: true,
+	  },
+	scrollbar: {
+		el: ".swiper-scrollbar",
+	  },
 	// breakpoints: {
 	// 	640: {
 	// 		slidesPerView: 2,

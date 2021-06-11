@@ -1,52 +1,52 @@
 body {
-    font-family: Gotham Pro;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 13px;
+  font-family: 'Gotham Pro';
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 .container {
-    width: 1328px;
-    margin: 0 auto;
+  width: 1328px;
+  margin: 0 auto;
 }
 
 .container-flex {
-    display: flex;
+  display: flex;
 }
 
 .container-flex {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .top-header {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .top-header-left {
-    font-family: Gotham Pro;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 13px;
-    display: flex;
-    align-items: center;
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 13px;
+  display: flex;
+  align-items: center;
 }
 
 ul.bottom-header li {
-    display: block;
+  display: block;
 }
 
 .main-section {
-    height: 100vh;
+  height: 100vh;
 }
 
 .main-section-image img {
@@ -55,101 +55,85 @@ ul.bottom-header li {
 }
 
 .main-images {
-    position: relative;
+  position: relative;
 }
 
 .overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .main-section-image {
-    position: relative;
+  position: relative;
 }
 
 .main-section-text {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translate(0, -50%);
-    padding-left: 100px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  padding-left: 100px;
 }
 
 /* START Swiper Recomendation */
 
 .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-  }
-  
-  .swiper-wrapper {
-    padding: 50px 0;
-  }
-  
-  .swiper-container-head {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    align-items: baseline;
-  }
-  
-  .swiper-container-arrows {
-    position: relative;
-    width: 100px;
-    padding: 6px 0;
-    margin: 0 auto;
-  }
-  
-  .button-prev, .button-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  
-  .button-prev {
-    left: 10px;
-  }
-  
-  .button-next {
-    right: 10px;
-  }
-  
-  .arrow {
-    border: solid black;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    width: 7px;
-    height: 7px;
-  }
-  
-  .right {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-  }
-  
-  .left {
-    transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-  }
-  
-  .flex-card {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  /* END Swiper Recomendation */
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-wrapper {
+  padding: 50px 0;
+}
+
+.swiper-container-head {
+  text-align: center;
+}
+
+.swiper-container-head-title h2 {
+  font-size: 32px;
+}
+
+.swiper-container-head-title a {
+  color: #A38452;
+  text-decoration: underline;
+}
+
+.flex-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.swiper-scrollbar {
+  background: rgba(205, 187, 159, 0.2)!important;
+}
+
+.swiper-scrollbar-drag {
+  background: #A38452!important;
+}
+
+.swiper-container-horizontal>.swiper-scrollbar {
+  position: absolute;
+  left: 1%;
+  bottom: 3px;
+  z-index: 50;
+  height: 5px;
+  width: 100%!important;
+}
+
+/* END Swiper Recomendation */
